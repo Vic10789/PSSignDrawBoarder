@@ -12,9 +12,13 @@
 		1C53318C1FC934160055640E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C53318A1FC934160055640E /* Main.storyboard */; };
 		1C53318E1FC934160055640E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C53318D1FC934160055640E /* Assets.xcassets */; };
 		1C5331911FC934160055640E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C53318F1FC934160055640E /* LaunchScreen.storyboard */; };
-		1C5331941FC934160055640E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5331931FC934160055640E /* main.m */; };
 		1C53319E1FC934160055640E /* PSSignDrawBoarderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53319D1FC934160055640E /* PSSignDrawBoarderTests.m */; };
 		1C5331A91FC934160055640E /* PSSignDrawBoarderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5331A81FC934160055640E /* PSSignDrawBoarderUITests.m */; };
+		1C5331BA1FC934C70055640E /* PSSignBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5331B91FC934C70055640E /* PSSignBoardView.m */; };
+		1C5331BD1FC93BA30055640E /* PSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5331BC1FC93BA30055640E /* PSDataManager.m */; };
+		1C5331C01FC93F3D0055640E /* PSDrawBoarderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5331BF1FC93F3D0055640E /* PSDrawBoarderView.m */; };
+		1C5331C31FC943190055640E /* SignDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5331C21FC943190055640E /* SignDrawViewController.m */; };
+		1C5331C41FC943CA0055640E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C5331931FC934160055640E /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		1C5331A41FC934160055640E /* PSSignDrawBoarderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSSignDrawBoarderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5331A81FC934160055640E /* PSSignDrawBoarderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSSignDrawBoarderUITests.m; sourceTree = "<group>"; };
 		1C5331AA1FC934160055640E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5331B81FC934C70055640E /* PSSignBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSSignBoardView.h; sourceTree = "<group>"; };
+		1C5331B91FC934C70055640E /* PSSignBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSSignBoardView.m; sourceTree = "<group>"; };
+		1C5331BB1FC93BA30055640E /* PSDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSDataManager.h; sourceTree = "<group>"; };
+		1C5331BC1FC93BA30055640E /* PSDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSDataManager.m; sourceTree = "<group>"; };
+		1C5331BE1FC93F3D0055640E /* PSDrawBoarderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSDrawBoarderView.h; sourceTree = "<group>"; };
+		1C5331BF1FC93F3D0055640E /* PSDrawBoarderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSDrawBoarderView.m; sourceTree = "<group>"; };
+		1C5331C11FC943190055640E /* SignDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignDrawViewController.h; sourceTree = "<group>"; };
+		1C5331C21FC943190055640E /* SignDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignDrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +113,18 @@
 		1C5331831FC934160055640E /* PSSignDrawBoarder */ = {
 			isa = PBXGroup;
 			children = (
+				1C5331B71FC934890055640E /* SignDrawBoarder */,
 				1C5331841FC934160055640E /* AppDelegate.h */,
 				1C5331851FC934160055640E /* AppDelegate.m */,
 				1C5331871FC934160055640E /* ViewController.h */,
 				1C5331881FC934160055640E /* ViewController.m */,
+				1C5331C11FC943190055640E /* SignDrawViewController.h */,
+				1C5331C21FC943190055640E /* SignDrawViewController.m */,
 				1C53318A1FC934160055640E /* Main.storyboard */,
 				1C53318D1FC934160055640E /* Assets.xcassets */,
 				1C53318F1FC934160055640E /* LaunchScreen.storyboard */,
-				1C5331921FC934160055640E /* Info.plist */,
 				1C5331931FC934160055640E /* main.m */,
+				1C5331921FC934160055640E /* Info.plist */,
 			);
 			path = PSSignDrawBoarder;
 			sourceTree = "<group>";
@@ -130,6 +145,19 @@
 				1C5331AA1FC934160055640E /* Info.plist */,
 			);
 			path = PSSignDrawBoarderUITests;
+			sourceTree = "<group>";
+		};
+		1C5331B71FC934890055640E /* SignDrawBoarder */ = {
+			isa = PBXGroup;
+			children = (
+				1C5331BB1FC93BA30055640E /* PSDataManager.h */,
+				1C5331BC1FC93BA30055640E /* PSDataManager.m */,
+				1C5331B81FC934C70055640E /* PSSignBoardView.h */,
+				1C5331B91FC934C70055640E /* PSSignBoardView.m */,
+				1C5331BE1FC93F3D0055640E /* PSDrawBoarderView.h */,
+				1C5331BF1FC93F3D0055640E /* PSDrawBoarderView.m */,
+			);
+			path = SignDrawBoarder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5331891FC934160055640E /* ViewController.m in Sources */,
-				1C5331941FC934160055640E /* main.m in Sources */,
+				1C5331C31FC943190055640E /* SignDrawViewController.m in Sources */,
+				1C5331BA1FC934C70055640E /* PSSignBoardView.m in Sources */,
+				1C5331BD1FC93BA30055640E /* PSDataManager.m in Sources */,
 				1C5331861FC934160055640E /* AppDelegate.m in Sources */,
+				1C5331C41FC943CA0055640E /* main.m in Sources */,
+				1C5331C01FC93F3D0055640E /* PSDrawBoarderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
